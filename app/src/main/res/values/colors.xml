@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="unselected">#DDDDDD</color>
+    <color name="unselected_shadow">#6f6f6f</color>
+
+    <color name="red">	#BF3F3F</color>
+    <color name="orange">#BF7F3F</color>
+    <color name="yellow">#BFBF3F</color>
+    <color name="green">#7FBF3F</color>
+    <color name="bluegreen">#3FBF7F</color>
+    <color name="lightblue">#3FBFBF</color>
+    <color name="blue">#336699</color>
+    <color name="darkblue">#3F3FBF</color>
+    <color name="purple">#7F3FBF</color>
+    <color name="pink">#993399</color>
+
+    <color name="red_shadow">#602020</color>
+    <color name="orange_shadow">#604020</color>
+    <color name="yellow_shadow">#606020</color>
+    <color name="green_shadow">#406020</color>
+    <color name="bluegreen_shadow">#206040</color>
+    <color name="lightblue_shadow">#206060</color>
+    <color name="blue_shadow">#1A334D</color>
+    <color name="darkblue_shadow">#202060</color>
+    <color name="purple_shadow">#402060</color>
+    <color name="pink_shadow">#4D1A4D</color>
+
+</resources>

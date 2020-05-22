@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Hit and Blow</string>
+    <string name="title_play">Play</string>
+    <string name="title_options">Options</string>
+    <string name="guesses">Guesses</string>
+    <string name="colors">Colors</string>
+    <string name="select_color">Select color</string>
+    <string name="make_guess">Guess</string>
+    <string name="how_to_play">How to Play</string>
+    <string name="ok">Got it!</string>
+    <string name="not_enough_colors_error">Not enough colors are enabled. Please select more colors from the options screen.</string>
+    <string name="view_results">View results</string>
+    <string name="play_again">Play again</string>
+    <string name="results">Results</string>
+    <string name="you_win">You won!</string>
+    <string name="you_lose">You lost…</string>
+    <string name="view_guesses">View Guesses</string>
+    <string name="the_correct_answer_was">The correct answer was:</string>
+
+    <string name="how_to_play_goal">You have a set number of guesses to guess the ordered 4-color code. To select a color, click a color from the bottom of the screen.</string>
+    <string name="how_to_play_guesses1">Once you select the 4 colors for a guess, hit the \"Guess\" button, and a \"hit\" and \"blow\" value will be displayed for that guess.</string>
+    <string name="how_to_play_hit">A \"hit\" means that one of the colors you guessed is correct, and is in the correct place.</string>
+    <string name="how_to_play_blow">A \"blow\" means that one of the colors you guessed is correct, but is NOT in the correct place.</string>
+    <string name="how_to_play_guesses2">Use the hit and blow values of your guesses to figure out the code.</string>
+    <string name="how_to_play_options">You can change the number of guesses and the colors from the options screen.</string>
+    <string name="good_luck">Good luck!</string>
+
+    <string-array name="guess_limit_array">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

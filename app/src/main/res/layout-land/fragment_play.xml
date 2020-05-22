@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/colorError"
+        style="@style/BiggerText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/not_enough_colors_error"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/guessesRows"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/row1"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row2"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row3"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row4"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row5"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row6"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row7"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row8"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row9"
+            layout="@layout/guess_row" />
+
+        <include
+            android:id="@+id/row10"
+            layout="@layout/guess_row" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/colorOptions"
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/make_guess">
+        <Button
+            android:id="@+id/makeGuess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/viewResults"
+            android:text="@string/make_guess"/>
+        <Button
+            android:id="@+id/viewResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/restart"
+            app:layout_constraintTop_toBottomOf="@id/makeGuess"
+            android:text="@string/view_results"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewResults"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/play_again"
+            android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/colorOptions"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:9"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_red"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/orange" />
+
+        <Button
+            android:id="@+id/orange"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_orange"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/red"
+            app:layout_constraintBottom_toTopOf="@id/yellow" />
+
+        <Button
+            android:id="@+id/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_yellow"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/orange"
+            app:layout_constraintBottom_toTopOf="@id/green" />
+
+        <Button
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_green"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/yellow"
+            app:layout_constraintBottom_toTopOf="@id/bluegreen" />
+
+        <Button
+            android:id="@+id/bluegreen"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_bluegreen"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/green"
+            app:layout_constraintBottom_toTopOf="@id/lightblue" />
+
+        <Button
+            android:id="@+id/lightblue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_lightblue"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bluegreen"
+            app:layout_constraintBottom_toTopOf="@id/darkblue" />
+
+        <Button
+            android:id="@+id/darkblue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_darkblue"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lightblue"
+            app:layout_constraintBottom_toTopOf="@id/purple" />
+
+        <Button
+            android:id="@+id/purple"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_purple"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/darkblue"
+            app:layout_constraintBottom_toTopOf="@id/pink"/>
+
+        <Button
+            android:id="@+id/pink"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/color_pink"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/purple"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

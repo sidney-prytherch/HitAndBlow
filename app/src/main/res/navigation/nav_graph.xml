@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_play">
+    <fragment
+        android:id="@+id/navigation_play"
+        android:name="com.sid.app.hitandblow.ui.PlayFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_play_to_how_to_play"
+            app:destination="@id/howToPlay"/>
+        <action
+            android:id="@+id/action_play_to_results"
+            app:destination="@id/resultsScreen"/>
+    </fragment>
+    <dialog
+        android:id="@+id/howToPlay"
+        android:name="com.sid.app.hitandblow.ui.HowToPlayFragment"
+        android:label="@string/how_to_play"
+        tools:layout="@layout/how_to_play_fragment"/>
+    <dialog
+        android:id="@+id/resultsScreen"
+        android:name="com.sid.app.hitandblow.ui.ResultsFragment"
+        android:label="@string/results"
+        tools:layout="@layout/results_fragment">
+        <argument
+            android:name="answerParcel"
+            app:argType="com.sid.app.hitandblow.helper.AnswerParcel"/>
+    </dialog>
+    <fragment
+        android:id="@+id/navigation_options"
+        android:name="com.sid.app.hitandblow.ui.OptionsFragment"
+        android:label="@string/title_options"
+        tools:layout="@layout/fragment_options" />
+</navigation>
