@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hit and Blow</string>
+    <string name="app_name">Hits and Blows</string>
     <string name="title_play">Play</string>
     <string name="title_options">Options</string>
     <string name="guesses">Guesses</string>
@@ -21,7 +21,7 @@
     <string name="how_to_play_guesses1">Once you select the 4 colors for a guess, hit the \"Guess\" button, and a \"hit\" and \"blow\" value will be displayed for that guess.</string>
     <string name="how_to_play_hit">A \"hit\" means that one of the colors you guessed is correct, and is in the correct place.</string>
     <string name="how_to_play_blow">A \"blow\" means that one of the colors you guessed is correct, but is NOT in the correct place.</string>
-    <string name="how_to_play_guesses2">Use the hit and blow values of your guesses to figure out the code.</string>
+    <string name="how_to_play_guesses2">Use the hit/blow values of your guesses to figure out the code.</string>
     <string name="how_to_play_options">You can change the number of guesses and the colors from the options screen.</string>
     <string name="good_luck">Good luck!</string>
 
